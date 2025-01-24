@@ -1,0 +1,3 @@
+config:
+  gcp:region: europe-west1
+  gcp:project: test-pulumi-cloud-run
