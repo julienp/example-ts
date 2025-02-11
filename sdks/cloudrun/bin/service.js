@@ -27,20 +27,12 @@ class Service extends pulumi.ComponentResource {
         let resourceInputs = {};
         opts = opts || {};
         if (!opts.id) {
-            if ((!args || args.project === undefined) && !opts.urn) {
-                throw new Error("Missing required property 'project'");
-            }
-            if ((!args || args.region === undefined) && !opts.urn) {
-                throw new Error("Missing required property 'region'");
-            }
             resourceInputs["appPath"] = args ? args.appPath : undefined;
             resourceInputs["concurrency"] = args ? args.concurrency : undefined;
             resourceInputs["containerPort"] = args ? args.containerPort : undefined;
             resourceInputs["cpu"] = args ? args.cpu : undefined;
             resourceInputs["imageName"] = args ? args.imageName : undefined;
             resourceInputs["memory"] = args ? args.memory : undefined;
-            resourceInputs["project"] = args ? args.project : undefined;
-            resourceInputs["region"] = args ? args.region : undefined;
             resourceInputs["imageRef"] = undefined /*out*/;
             resourceInputs["url"] = undefined /*out*/;
         }

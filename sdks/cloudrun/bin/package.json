@@ -1,6 +1,6 @@
 {
     "name": "@pulumi/cloudrun",
-    "version": "1.2.6",
+    "version": "2.1.0",
     "main": "bin/index.js",
     "scripts": {
         "build": "tsc",
@@ -16,7 +16,7 @@
     "pulumi": {
         "resource": true,
         "name": "cloudrun",
-        "version": "1.2.6",
+        "version": "2.1.0",
         "server": "git://github.com/julienp/cloudrun"
     }
 }
